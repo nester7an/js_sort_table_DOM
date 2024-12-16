@@ -71,7 +71,7 @@ function clickOnHeaders(event) {
   function SToNumber(string) {
     const filtredString = string.replace(/\$/g, '').replace(/,/g, '');
 
-    return filtredString;
+    return Number(filtredString);
   }
 
   if (currentTh.textContent === 'Salary') {
